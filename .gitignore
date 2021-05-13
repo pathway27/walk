@@ -1,0 +1,17 @@
+.DS_Store
+build
+Debug
+Release
+desktop
+.vs
+.ropeproject
+
+*.*o
+*.*lf
+*.bin
+*.sfo
+
+out/*
+
+server
+server-rails

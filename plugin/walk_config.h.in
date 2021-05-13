@@ -1,0 +1,6 @@
+#ifndef WALKCONFIG_H
+#define WALKCONFIG_H
+
+const char *GIT_VERSION = "@GIT_VERSION@";
+
+#endif
