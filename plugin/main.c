@@ -146,7 +146,7 @@ static int sceDisplaySetFrameBuf_patched(const SceDisplayFrameBuf *pParam, int s
 #ifdef DEBUG
     osdDrawStringF(0, 0, "TITLEID %s    Scroll %i    LastTime %" PRId64 "    Page Number: %i Size %" PRIu64, g_appTitleID, g_scroll_index, g_time_now, (g_scroll_index + (LINES_TO_DISPLAY - 2)) / (LINES_TO_DISPLAY - 1), g_walkthrough_size);
 #else
-    osdDrawStringF(0, 0, "Walk v%s", GIT_VERSION);
+    osdDrawStringF(0, 0, "Walk %s %*c Part of the KyuHEN Contest", GIT_VERSION, 80, ' ');
 #endif
     osdDrawStringF(0, 10, "%s/%s/walk.txt", WALK_PATH, g_appTitleID);
 

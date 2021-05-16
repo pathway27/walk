@@ -1,16 +1,32 @@
 ## Walk
 
-Is a PSVITA plugin to read a walkthrough while playing a game.
+Is a PSVITA plugin to read a `txt` file walkthrough while playing a game.
+> Too many games, not enough time
 
-## Walk plugin
+**This is part of the [KyûHEN competition](https://kyuhen.customprotocol.com/en/).**
+
+![](https://i.imgur.com/7Kb7sgQ.png)
+
+```
+vvalk
+i
+t
+a
+```
+
+> Insert pun for pathway and walk. Walk on the pathway.
+
+See `plugin/README.md` for development help.
 
 ### Installation
 
 This plugin needs [IO Plus](https://github.com/CelesteBlue-dev/PSVita-RE-tools/raw/master/ioPlus/ioPlus-0.1/release/ioplus.skprx) by CelesteBlue.
 
-Then download this plugin (walk.suprx) and add to your `ux0:tai/config.txt`.
+Then download `walk` and put the `.suprx` file in `ux0:tai` and it to
+your `ux0:tai/config.txt`.
+
 Add it to `*ALL` to enable it for all games, or add a section for the titleid
-of the game you're interested in.
+of the game / app you're interested in.
 
 ```
 *KERNAL
@@ -20,7 +36,9 @@ ux0:/tai/ioplus.skprx
 ux0:tai/walk.suprx
 ```
 
-Add your `txt` file into the directory (with filename as the game's TITLEID): `ux0:data/walks/TITLEID.txt`.
+Transfer your `txt` into the directory `ux0:data/walks/TITLEID/` with the filename as `walk.txt`.
+
+So the full path will be: `ux0:data/walks/TITLEID/walk.txt`
 
 You can find the title id at the gamefaqs' data page, like [this one](https://gamefaqs.gamespot.com/vita/763296-danganronpa-2-goodbye-despair/data).
 
@@ -34,14 +52,15 @@ Use the D-Pad to control the viewer:
   - Left  - Go up 27 lines
   - Right - Go down 27 lines
 
-NOTE: The viewer doesn't pause the game, it's still running behind!
-
+NOTE: The viewer doesn't pause the game, it's still running behind it!
+NOTE: Some lines maybe cut-off and you may need to use Left and Right to go to the next page
 
 ### TODO:
 
+- Some characters are broken like `¯`, `U+00AF`
 - Bigger font / custom font
-- Use Network for guides / server
-- More than one file per titleid
+- More than one walkthrough / file per titleid
+- Use Network for guides / guides API server
 - detect from emulators / psp mode
 - html
 
@@ -68,19 +87,19 @@ a.click();
 })()
 ```
 
+## Disclaimer
+
+By doing above and using this plugin you agree that you are reading guides provided
+by the author as if on on the website `gamefaqs.com`.
+
 ## License
 
 GPLv3
 
-## Disclaimer
-
-By using this app / plugin you agree that you are reading the guides provided
-by the stated user as if on on the website `gamefaqs.com`.
-
 ## Thanks
 
+- Daniel Hepper for [font8x8](https://github.com/dhepper/font8x8)
 - CelesteBlue for [ioplus](https://github.com/CelesteBlue-dev/PSVita-RE-tools/tree/master/ioPlus/ioPlus-0.1)
 - Electry for [VGi](https://github.com/Electry/VGi)
-- Molecule Team for [Henkaku](https://henkaku.xyz/) and yifanlu [TaiHen](https://tai.henkaku.xyz/)
-- Daniel Hepper for [font8x8](https://github.com/dhepper/font8x8)
+- Molecule Team for [Henkaku](https://henkaku.xyz/) and yifanlu for [TaiHen](https://tai.henkaku.xyz/)
 - vitasdk peeps
