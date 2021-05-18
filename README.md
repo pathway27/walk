@@ -36,9 +36,9 @@ ux0:/tai/ioplus.skprx
 ux0:tai/walk.suprx
 ```
 
-Transfer your `txt` into the directory `ux0:data/walks/TITLEID/` with the filename as `walk.txt`.
+Transfer your `txt` into the directory `ux0:data/walk/TITLEID/` with the filename as `walk.txt`.
 
-So the full path will be: `ux0:data/walks/TITLEID/walk.txt`
+So the full path will be: `ux0:data/walk/TITLEID/walk.txt`
 
 You can find the title id at the gamefaqs' data page, like [this one](https://gamefaqs.gamespot.com/vita/763296-danganronpa-2-goodbye-despair/data).
 
